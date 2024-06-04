@@ -22,7 +22,9 @@ public class FizzBuzzImpl implements Fizzbuzz{
 
     @Override
     public boolean checkBuzz(int input) {
+        if(input % 5 ==0){
+            return true;
+        }
         return false;
     }
-
 }
