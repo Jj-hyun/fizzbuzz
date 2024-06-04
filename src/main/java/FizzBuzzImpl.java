@@ -7,7 +7,8 @@ public class FizzBuzzImpl implements Fizzbuzz{
 
     @Override
     public boolean checkFizz(int input) {
-        return input % 3 == 0;
+        boolean check = input % 3 == 0;
+        return check;
     }
 
     @Override
