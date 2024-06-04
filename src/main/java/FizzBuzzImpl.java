@@ -2,7 +2,17 @@ public class FizzBuzzImpl implements Fizzbuzz{
 
     @Override
     public String checkFizzBuzz(int input) {
-        return null;
+        StringBuilder stringBuilder = new StringBuilder();
+        if(checkFizz(input)){
+            stringBuilder.append("Fizz");
+        }
+        if(checkBuzz(input)){
+            stringBuilder.append("Buzz");
+        }
+        if(stringBuilder.isEmpty()){
+            stringBuilder.append(input);
+        }
+        return stringBuilder.toString();
     }
 
     @Override
